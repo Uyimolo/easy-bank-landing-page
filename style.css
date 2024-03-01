@@ -21,28 +21,36 @@
 a {
   text-decoration: none;
   color: var(--Dark-Blue);
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+a:hover {
+  color: var(--Bright-Cyan);
 }
 
 h1 {
-  font-size: 2.4em;
-  font-weight: 500;
+  font-size: 2.5em;
+  font-weight: 400;
   color: var(--Dark-Blue);
 }
 
 .medium-heading {
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 500;
   color: var(--Dark-Blue);
 }
 
 .small-heading {
-  font-size: 1.2em;
+  font-size: 1.1em;
   color: var(--Dark-Blue);
+  font-weight: 500;
 }
 p {
   color: var(--Grayish-Blue);
-  font-weight: 300;
-  font-size: 1em;
+  font-weight: 600;
+  font-size: 0.95em;
+  line-height: 1.6;
 }
 
 button {
@@ -57,7 +65,7 @@ button {
     var(--Bright-Cyan)
   );
   color: var(--White);
-  font-size: 1em;
+  font-size: 0.9em;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -83,7 +91,7 @@ nav {
   position: fixed;
   height: 100vh;
   left: 0;
-  background-image: linear-gradient(to right, #000000a9, #0000003a, #000000a9);
+  background-color: #00000023;
   width: 100%;
   top: 4.5rem;
   padding: var(--Mobile-Container-padding);
@@ -99,7 +107,7 @@ nav {
   background-color: var(--Very-Light-Gray);
   border-radius: 0.5rem;
   padding: 2rem;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
@@ -111,6 +119,7 @@ nav.active {
   height: 1.1rem;
   width: 1.2rem;
   display: none;
+  cursor: pointer;
 }
 
 .open.active {
@@ -119,6 +128,7 @@ nav.active {
 
 .close {
   display: none;
+  cursor: pointer;
 }
 
 .close.active {
@@ -128,9 +138,8 @@ nav.active {
 .hero {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* padding:0 var(--Mobile-Container-padding); */
-  background-color: #f9f9f9;
+
+  background-color: #e9e9e944;
   padding-bottom: 4rem;
 }
 
@@ -157,7 +166,7 @@ nav.active {
 }
 
 .hero-text p {
-  max-width: 300px;
+  max-width: 350px;
   margin: auto;
 }
 
@@ -165,7 +174,7 @@ nav.active {
   padding: 5rem var(--Mobile-Container-padding);
   display: flex;
   flex-direction: column;
-  background-color: var(--Light-Grayish-Blue);
+  background-color: #bfc7ca38;
   text-align: center;
   gap: 2rem;
 }
@@ -206,6 +215,9 @@ nav.active {
   flex-direction: column;
   border-radius: 1rem;
   overflow: hidden;
+}
+
+.article-tab:hover {
   box-shadow: 2px 2px 5px rgb(235, 234, 234);
 }
 
@@ -217,8 +229,14 @@ nav.active {
   gap: 1rem;
 }
 
-.small-para {
+.article-tab-text p:nth-child(3) {
   font-size: 0.8em;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.small-para {
+  font-size: 0.6em;
 }
 
 footer {
@@ -249,7 +267,8 @@ footer {
   gap: 1rem;
 }
 
-.footer-links-1, .footer-links-2 {
+.footer-links-1,
+.footer-links-2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,7 +277,10 @@ footer {
 
 .footer-links a {
   color: var(--Light-Grayish-Blue);
+}
 
+.footer-links a:hover {
+  color: var(--Bright-Cyan);
 }
 
 .cta-and-copyright {
